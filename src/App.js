@@ -54,8 +54,7 @@ function App() {
 }
 
 function Meme({images, title}){
-  const {meme} = props
-  const url = meme.images.fixed_height.url
+  const url = images.fixed_height.url
   return (<div className="meme" onClick={()=>window.open(url, '_blank')}>
     <div className="meme-title">{title}</div>
     <img height="200" alt="meme" src={url} />
